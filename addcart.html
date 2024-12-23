@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="addcart.css" />
+</head>
+<body>
+
+	<section id="header" class="header">
+		<div class="logo">FarmersHub</div>
+		<div class="flex-container">
+			<div class="button-container">
+				<button class="dropdown-btn">All</button>
+			</div>
+			<div class="input-container">
+				<input type="text" placeholder="Search..." class="search-input" />
+			</div>
+			<div class="search-button-container">
+				<button class="search-btn">
+					<i class="bi bi-search"></i>
+				</button>
+			</div>
+		</div> 
+		<!-- Form Container/Authentication -->
+		<div>
+			<ul id="navbar">
+				<li><a class="active" href="#hero">Home</a></li>
+				<li><a href="#agroProducts">Features</a></li>
+				<li><a href="#product1">Products</a></li>
+				<li><a href="#newsletter">Newsletter</a></li>
+				<li><a href="#contact">Contact</a></li>
+		
+				<li>
+					<div class="auth-container">
+						<a href="#" class="sign-in-link" id="signInToggle"> User </a>
+						<!-- Login & Register Form -->
+						<div class="login-form" id="loginForm">
+							<!-- Login Section -->
+							<form id="loginSection">
+								<h3>Sign In</h3>
+								<label for="email">Email</label>
+								<input
+									type="email"
+									id="email"
+									placeholder="Enter your email"
+									required
+								/>
+								<label for="password">Password</label>
+								<input
+									type="password"
+									id="password"
+									placeholder="Enter your password"
+									required
+								/>
+								<button type="submit" class="submit-btn">Sign In</button>
+								<p class="toggle-text" id="toggleText">
+									New user? <a href="#" id="toggleRegister">Register here</a>
+								</p>
+							</form>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="cartpage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+					
+				</li>
+				<li class="basket-count">0</li>
+			</ul>
+		</div>
+	</section>
+	
+	
+	<section id="hero">
+		<div class="hero-content">
+			<h1>Empowering Farmers, One Step at a Time</h1>
+			<p>
+				Discover resources, connect with experts, and thrive with FarmersHub.
+			</p>
+			<button>Get Started</button>
+		</div>
+	</section>
+
+	<section id="agroProducts" class="section-agro">
+		<h2>Features</h2>
+		<p>Empowering Farmers with knowledge</p>
+		<div class="agro-container">
+			<a href="farmloan.html" target="_blank">
+				<div class="agro-item">
+					<img
+						src="Credit.jpg"
+						alt="Seeds and Seedlings"
+					/>
+					<h5>Credit Facility</h5>
+				</div>
+			</a>
+			<a href="productprice.html" target="_blank">
+				<div class="agro-item">
+					<img src="Market.Prices.jpg" alt="Hybrid Harrow" />
+					<h5>Market Prices</h5>
+				</div>
+			</a>
+			<a href="weather.html" target="_blank">
+				<div class="agro-item">
+					<img
+						src="customer-support.jpg"
+						alt="Broiler Chicks"
+					/>
+					<h5>Weather Updates</h5>
+				</div>
+			</a>
+			<a href="support.html" target="_blank">
+				<div class="agro-item">
+					<img src="Support.jpg" alt="Steel Wheelbarrow" />
+					<h5>Support</h5>
+				</div>
+			</a>
+
+		</div>
+	</section>
+	
+    
+		<section id="product1" class="section-p1">
+			<h2>Products</h2>
+			<p>Latest Machinery, Tools and Seeds</p>
+			<div class="pro-container">
+				<div class="pro">
+					<img src="images/Farmtools/result_JP.MAX.Baler.jpg" alt="" />
+					<div class="des">
+						<span>J.P. Max</span>
+						<h5>Double Row Baler</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+				<div class="pro">
+					<img src="images/Farmtools/result_H-400.Plough.jpg" alt="" />
+					<div class="des">
+						<span>Mikano</span>
+						<h5>H400 Plough</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+				<div class="pro">
+					<img src="images/Farmtools/result_X.500.Tractor.jpg" alt="" />
+					<div class="des">
+						<span>Suzuki</span>
+						<h5>X500 Tractor</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+				<div class="pro">
+					<img src="images/Farmtools/result_FX.Axe.Red.jpg" alt="" />
+					<div class="des">
+						<span>Johnsons</span>
+						<h5>Curved Grip Axe</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+				<div class="pro">
+					<img src="images/Farmtools/Emeka&Uba.Wheelbarrow.jpg" alt="" />
+					<div class="des">
+						<span>Emeka&Uba</span>
+						<h5>Steel Wheelbarrow</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+				<div class="pro">
+					<img src="images/Farmtools/result_broiler.chicks.jpg" alt="" />
+					<div class="des">
+						<span>Farmhub</span>
+						<h5>Broilers</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+				<div class="pro">
+					<img src="images/Farmtools/result_Jincheng.Harrow.jpg" alt="" />
+					<div class="des">
+						<span>Jincheng</span>
+						<h5>Z500 Hybrid</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+				<div class="pro">
+					<img src="images/Farmtools/result_seedsandseedlings.jpg" alt="" />
+					<div class="des">
+						<span>Farmhub</span>
+						<h5>Seeds and Seedlings</h5>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$78</h4>
+					</div>
+					<a  class="addtocart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section id="newsletter" class="section-p1 section-m1">
+			<div class="newstext">
+				<h4>Sign up for Newsletter</h4>
+				<p>
+					Stay updated with the latest farming tips, tools, news and
+					<span>special offers</span>
+				</p>
+			</div>
+			<div class="form">
+				<input type="text" placeholder="Your email address" />
+				<button class="normal">Sign Up</button>
+			</div>
+		</section>
+		<main>
+			<section id="market-prices" class="section-p1">
+				<h2>Market Prices</h2>
+				<div id="prices-container"></div>
+			</section>
+		</main>
+
+		<!-- footer -->
+		<footer id="contact" class="section-p1">
+			<div class="col">
+				<div class="logo">FarmersHub</div>
+				<h4>Contact</h4>
+				<p><strong>Address: </strong> 4 Samuel Street, Ilamose Estate, Lagos</p>
+				<p><strong>Phone: </strong> +234 806 026 4134 / +234 813 623 2915</p>
+				<p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+				<div class="follow">
+					<h4>Follow us</h4>
+					<div class="icon">
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-pinterest"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<h4>About</h4>
+				<a href="#">About Us</a>
+				<a href="#">Delivery Information</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms & Conditions</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="col">
+				<h4>My Account</h4>
+				<a href="#">Sign In</a>
+				<a href="#">View Cart</a>
+				<a href="#">My Wishlist</a>
+				<a href="#">Track my Order</a>
+				<a href="#">Help</a>
+			</div>
+			<div class="col install">
+				<h4>Install App</h4>
+				<p>From App Store or Google Play</p>
+				<div class="row">
+					<img src="images/pay/app.jpg" alt="" /><img
+						src="images/pay/play.jpg"
+						alt=""
+					/>
+				</div>
+				<p>Secured Payment Gateway</p>
+				<img src="images/pay/pay.png" alt="" />
+			</div>
+			<div class="copyright">
+				<p>&copy; 2024, Endufy etc - HTML CSS Ecommerce Template</p>
+			</div>
+		</footer>
+
+
+
+
+
+		<script src="addcart.js"></script> 
+</body>
+</html>

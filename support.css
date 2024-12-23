@@ -1,0 +1,39 @@
+.supports{
+    background-color: #f5e8e8;
+    padding: 20px;
+    text-align: center;
+}
+.support-category{
+    margin-bottom: 20px;
+}
+.support-category h3{
+margin-top: 0;
+}
+.support-category ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.support-category li{
+    margin-bottom: 10px;
+}
+.support-category a{
+    text-decoration: none;
+    color: #337ab7;
+}
+.support-category a:hover{
+    color: #23527c;
+}
+/* <header> */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 20px 20px;
+    background: #28a745;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }

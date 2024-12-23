@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faqs.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FAQs - FarmHub</h1>
+
+        <div class="search-bar">
+            <input type="text" id="faqSearch" placeholder="Search FAQs...">
+        </div>
+
+        <div class="faq">
+            <h3>What is FarmHub?</h3>
+            <p>FarmHub is an online platform connecting farmers with buyers to sell fresh produce directly.</p>
+        </div>
+
+        <div class="faq">
+            <h3>How do I create an account?</h3>
+            <p>You can create an account by clicking the "Sign Up" button on the homepage and filling in your details.</p>
+        </div>
+
+        <div class="faq">
+            <h3>What products can I find on FarmHub?</h3>
+            <p>FarmHub offers fresh fruits, vegetables, grains, dairy products, and more directly from farmers.</p>
+        </div>
+
+        <div class="faq">
+            <h3>How can I place an order?</h3>
+            <p>Browse the products, add them to your cart, and proceed to checkout to place your order.</p>
+        </div>
+
+        <div class="faq">
+            <h3>What payment methods are accepted?</h3>
+            <p>We accept credit/debit cards, mobile payments, and bank transfers.</p>
+        </div>
+    </div>
+
+    <script>
+        // Search FAQs functionality
+        document.getElementById('faqSearch').addEventListener('input', function() {
+            const searchQuery = this.value.toLowerCase();
+            const faqs = document.querySelectorAll('.faq');
+
+            faqs.forEach(faq => {
+                const question = faq.querySelector('h3').textContent.toLowerCase();
+                const answer = faq.querySelector('p').textContent.toLowerCase();
+                if (question.includes(searchQuery) || answer.includes(searchQuery)) {
+                    faq.style.display = '';
+                } else {
+                    faq.style.display = 'none';
+                }
+            });
+        });
+
+        // Toggle FAQ answers
+        document.querySelectorAll('.faq h3').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
